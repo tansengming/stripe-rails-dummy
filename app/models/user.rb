@@ -2,15 +2,16 @@ class User < ApplicationRecord
   include Stripe::Callbacks
 
   def say_something
-    puts say_hello
+    say_hello
+    # say_tootsie
   end
 
   def say_tootsie
-    'tootsie!'
+    puts 'tootsie!'
   end
 
   def say_hello
-    'hello!'
+    puts 'hello!'
   end
 
   after_customer_updated! do |customer, event|
