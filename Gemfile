@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'stripe-rails'
+gem 'stripe-rails', github: 'garrettqmartin8/stripe-rails', branch: 'elements'
 gem 'stripe-ruby-mock', group: 'test'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
