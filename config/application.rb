@@ -15,5 +15,7 @@ module StripeRailsDummy
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.stripe.publishable_key = 'test_1234'
+
+    config.i18n.available_locales = %i[en fr]
   end
 end
